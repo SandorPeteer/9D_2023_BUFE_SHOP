@@ -84,8 +84,6 @@
 
 <body class="text-center">
 
-<div class="header">9D BUFE WEBSHOP 2023</div>
-
     <main class="form-signin w-100 m-auto">
         <form>
             <img class="mb-4" src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/favicon/apple-touch-icon.png" alt="" width="72" height="57">
@@ -105,12 +103,18 @@
                     <input type="checkbox" value="remember-me"> Emlékezz rám
                 </label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Bejelentkezés</button>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="reg()">Bejelentkezés</button>
             <p class="mt-5 mb-3 text-muted">&copy; 2022-2023</p>
         </form>
     </main>
 
 
+    <script>
+        function reg() {
+            localStorage.setItem("email",floatingInput.value);
+            localStorage.setItem("pswd",floatingPassword.value);
+        }
+    </script>
 
 </body>
 
