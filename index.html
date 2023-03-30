@@ -1,28 +1,11 @@
-<!doctype html>
-<html lang="hu">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Sándor Péter, Nácsa Bálint, Bialics Zsombor,...">
-    <meta name="generator" content="Hugo 0.108.0">
-    <title>FŐOLDAL</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
-
-    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/favicon/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/favicon/manifest.json">
-    <link rel="mask-icon" href="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/favicon/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="icon" href="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/favicon/favicon.ico">
-    <meta name="theme-color" content="#712cf9">
-
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
     <style>
         .bd-placeholder-img {
@@ -32,39 +15,40 @@
             -moz-user-select: none;
             user-select: none;
         }
-
+        
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
         }
-
+        
         .b-example-divider {
+            width: 100%;
             height: 3rem;
             background-color: rgba(0, 0, 0, .1);
             border: solid rgba(0, 0, 0, .15);
             border-width: 1px 0;
             box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
         }
-
+        
         .b-example-vr {
             flex-shrink: 0;
             width: 1.5rem;
             height: 100vh;
         }
-
+        
         .bi {
             vertical-align: -.125em;
             fill: currentColor;
         }
-
+        
         .nav-scroller {
             position: relative;
             z-index: 2;
             height: 2.75rem;
             overflow-y: hidden;
         }
-
+        
         .nav-scroller .nav {
             display: flex;
             flex-wrap: nowrap;
@@ -75,24 +59,142 @@
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
         }
+        
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+        
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
     </style>
-
-
-    <!-- Custom styles for this template -->
 
 </head>
 
 <body>
 
-   <div class="content">
-     <h1>9D BÜFÉ</h1>
-     
-     <a href="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/index.html"> FŐOLDAL </a>
-     <a href="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/reg.html"> REGISZTRÁCIÓ </a>
-       
-       https://prod.liveshare.vsengsaas.visualstudio.com/join?6849ECB912330DA933286D0D6E855B64A54A
-       
-     </div>
+    <header>
+
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <div class="col-md-3 mb-2 mb-md-0">
+                    <a href="" class="d-inline-flex link-body-emphasis text-decoration-none">
+                        <img style="width: 20%;" src="https://raw.githubusercontent.com/GonczolZsombor/see/main/img/fav.png" alt="LOGÓ">
+                    </a>
+                </div>
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2">Features</a></li>
+                    <li><a href="#" class="nav-link px-2">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2">About</a></li>
+                </ul>
+
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                    <button type="button" class="btn btn-primary">Sign-up</button>
+                </div>
+            </header>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- ITT INDULNAK A TERMÉKEK ELSŐ SORA! -->
+
+        <div class="row m-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/egyéb/Hamburger.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">This is a description of product 1.</p>
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/egyéb/Hamburger.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">This is a description of product 2.</p>
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/egyéb/Hamburger.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">This is a description of product 3.</p>
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ITT INDULNAK A TERMÉKEK MÁSODIK SORA! -->
+
+
+        <div class="row m-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/egyéb/Hamburger.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">This is a description of product 1.</p>
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/egyéb/Hamburger.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">This is a description of product 2.</p>
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/egyéb/Hamburger.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">This is a description of product 3.</p>
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
 
 </body>
 
