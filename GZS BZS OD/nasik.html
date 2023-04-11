@@ -4,128 +4,39 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Nasik</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .b-example-divider {
-            width: 100%;
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .btn-bd-primary {
-            --bd-violet-bg: #712cf9;
-            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-            --bs-btn-font-weight: 600;
-            --bs-btn-color: var(--bs-white);
-            --bs-btn-bg: var(--bd-violet-bg);
-            --bs-btn-border-color: var(--bd-violet-bg);
-            --bs-btn-hover-color: var(--bs-white);
-            --bs-btn-hover-bg: #6528e0;
-            --bs-btn-hover-border-color: #6528e0;
-            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-            --bs-btn-active-color: var(--bs-btn-hover-color);
-            --bs-btn-active-bg: #5a23c8;
-            --bs-btn-active-border-color: #5a23c8;
-        }
-
-        .bd-mode-toggle {
-            z-index: 1500;
-        }
-
-        .card:hover {
-            border: 3px solid saddlebrown;
-        }
-    </style>
 
 </head>
 
 <body>
 
+    <style>
+        body{
+            background-color: rgb(0, 104, 69);
+        }
+
+    </style>
+
     <header>
-
-        <div class="container">
-            <header
-                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-                <div class="col-md-3 mb-2 mb-md-0">
-                    <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
-                        <img style="width: 20%;"
-                            src="https://raw.githubusercontent.com/GonczolZsombor/see/main/img/fav.png" alt="LOGÓ">
-                    </a>
-                </div>
-
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="index.html" class="nav-link px-2">Főoldal</a></li>
-                    <li><a href="etel.html" class="nav-link px-2">Étel</a></li>
-                    <li><a href="ital.html" class="nav-link px-2">Ital</a></li>
-                    <li><a href="nasik.html" class="nav-link px-2 link-secondary">Nasik</a></li>
-                    <li><a href="egyeb.html" class="nav-link px-2">Egyéb</a></li>
-                    <li><a href="rolunk.html" class="nav-link px-2">Rólunk</a></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                      </svg> 
-                    </button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
-                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                            <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"/>
-                          </svg>
-                    </button>
-                </div>
-            </header>
-        </div>
+        <ul>
+            <a href="index.html"><li>Főoldal</li></a>
+            <a href="etel.html"><li>Étel</li></a>
+            <a href="ital.html"><li>Ital</li></a>
+            <a href="nasik.html"><li class="active">Nasik</li></a>
+            <a href="egyeb.html"><li>Egyéb</li></a>
+            <a href="rolunk.html"><li>Rólunk</li></a>
+            <a href="kosar.html"><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/></svg></li></a>
+            <a href="index2.html"><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg></li></a>
+        </ul>
     </header>
+    <br><br><br><br>
 
     <div class="container">
 
@@ -137,9 +48,9 @@
                     <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/GZS BZS OD/img/nasi/edes/Snickers.webp" class="card-img-top"
                         alt="Product 1">
                     <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">This is a description of product 1.</p>
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        <h5 class="card-title">300FT</h5>
+                        <p class="card-text">A képen egy Snickers található.</p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
                     </div>
                 </div>
             </div>
@@ -148,9 +59,9 @@
                     <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/GZS BZS OD/img/nasi/edes/Twix.webp" class="card-img-top"
                         alt="Product 2">
                     <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">This is a description of product 2.</p>
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        <h5 class="card-title">500FT</h5>
+                        <p class="card-text">A képen egy Twix található.</p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
                     </div>
                 </div>
             </div>
@@ -159,9 +70,9 @@
                     <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/GZS BZS OD/img/nasi/edes/Bounty.webp" class="card-img-top"
                         alt="Product 3">
                     <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">This is a description of product 3.</p>
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        <h5 class="card-title">400FT</h5>
+                        <p class="card-text">A képen egy bounty található.</p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
                     </div>
                 </div>
             </div>
@@ -176,9 +87,9 @@
                     <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/GZS BZS OD/img/nasi/edes/kitkat.webp" class="card-img-top"
                         alt="Product 1">
                     <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">This is a description of product 1.</p>
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        <h5 class="card-title">700FT</h5>
+                        <p class="card-text">A képen egy KitKat található.</p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
                     </div>
                 </div>
             </div>
@@ -187,9 +98,9 @@
                     <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/GZS BZS OD/img/nasi/edes/mars.webp" class="card-img-top"
                         alt="Product 2">
                     <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">This is a description of product 2.</p>
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        <h5 class="card-title">300FT</h5>
+                        <p class="card-text">A képen egy Mars található.</p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
                     </div>
                 </div>
             </div>
@@ -198,9 +109,9 @@
                     <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/GZS BZS OD/img/nasi/edes/vivarollsstrawberry.webp" class="card-img-top"
                         alt="Product 3">
                     <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">This is a description of product 3.</p>
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        <h5 class="card-title">450FT</h5>
+                        <p class="card-text">A képen egy Rolls található.</p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
                     </div>
                 </div>
             </div>
