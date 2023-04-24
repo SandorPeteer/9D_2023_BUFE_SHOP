@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egyéb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+                body
+    {   background-color: #35a6e8;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+    .images{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    --rotate: 0deg;
+    transform: translate(-50%, 50%) rotate(var(--rotate));
+    width: 1300px;
+    height: 1300px;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+    outline: 1px dashed #fff5;
+    outline-offset: -100px;
+}
+.images .item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    rotate: calc(60deg * var(--i));
+}
+.images .item img{
+    height: 420px;
+}
+
+    h3
+    {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    }
+
+    table
+    {
+    border: 3px solid black;
+    width: 80%;
+    height: 120%;
+    }
+
+    a{
+    color: rgba(255, 255, 255, 0);
+}
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #fff4;
+}
+header ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+header li{
+    padding: 30px 40px;
+    color: #fff;
+}
+header li.active, header li:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.card:hover {
+  border: 3px solid saddlebrown;
+}
+.linkek
+{
+  color: black;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #2B2F3A, #0D0E12);
+    overflow: hidden;
+}
+.slider::before{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: #35a6e8;
+}
+
+#kep
+{
+    width: 326px;
+    height: 250px;
+}
+</style>
+
+
+</head>
+<body>
+    
+    <header>
+         <div class="container">
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <div class="col-md-3 mb-2 mb-md-0">
+                    <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                        <img style="width: 20%;"
+                            src="https://raw.githubusercontent.com/GonczolZsombor/see/main/img/fav.png" alt="LOGÓ">
+                    </a>
+                </div>
+    </header>
+
+    <header>
+    <ul>
+        <a href="https://SandorPeteer.github.io/9D_2023_BUFE_SHOP/GZS%20BZS%20OD/index.html"><li>Főoldal</li></a>
+        <a href="https://SandorPeteer.github.io/9D_2023_BUFE_SHOP/GZS%20BZS%20OD/etel.html"><li class="active">Étel</li></a>
+        <a href="https://SandorPeteer.github.io/9D_2023_BUFE_SHOP/GZS%20BZS%20OD/ital.html"><li>Ital</li></a>
+        <a href="https://SandorPeteer.github.io/9D_2023_BUFE_SHOP/GZS%20BZS%20OD/nasik.html"><li>Nasik</li></a>
+        <a href="https://SandorPeteer.github.io/9D_2023_BUFE_SHOP/GZS%20BZS%20OD/egyeb.html"><li>Egyéb</li></a>
+        <a href="https://SandorPeteer.github.io/9D_2023_BUFE_SHOP/GZS%20BZS%20OD/rolunk.html"><li>Rólunk</li></a>
+        <a href="kosar.html"><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/></svg></li></a>
+        <a href="index2.html"><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg></li></a>
+    </ul>
+    </header>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="container">
+
+        <!-- ITT INDULNAK A TERMÉKEK ELSŐ SORA! -->
+
+        <div class="row m-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <img id="kep" src="https://www.digitalko.hu/kepek/termek/do/mo/202105/16/domo_do9166c_csaladi_melegszendvics_suto_4_fore_1535535871_650x520.jpg" class="card-img-top"
+                        alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mellegszendvicsé allakítás</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img id="kep" src="https://vendtex.hu/wp-content/uploads/2020/11/szalveta-index.jpg" class="card-img-top"
+                        alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">szallvéta vásárlása</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img id="kep" src="https://www.aero-shop.hu/img/60344/527212/527212.jpg" class="card-img-top"
+                        alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">+kanál,kés,villa</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ITT INDULNAK A TERMÉKEK MÁSODIK SORA! -->
+
+
+        <div class="row m-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <img id="kep" src="https://www.dominox.hu/img/mid/95_1600_w_os_samsung_1099_es_mikro.jpg" class="card-img-top"
+                        alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mellegítés</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img id="kep" src="https://grate.hu/img/prod-imgs//3567a5b7d6bb1a82b4b17fa6df/Ooops-Classic-Sensitive-papir-zsebkendo-3-retegu-90-db-main.webp" class="card-img-top"
+                        alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">zsebkendő</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img id="kep" src="https://gyroska.hu/wp-content/uploads/2015/05/ketchup-mayo.jpeg" class="card-img-top"
+                        alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">ketchup,majonéz</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
