@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<style>
+    .termek{
+        transition: 0.2s;
+    }
+    .termek:hover{
+        border: 5px solid black;
+    }
+</style>
+    </head>
+
+<body onload="ar()">
+    <h1>Hello, world!</h1>
+
+    <img class="img-thumbnail w-50 termek" data-bs-toggle="modal" data-bs-target="#t01" src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/GZS%20BZS%20OD/img/nasi/edes/Snickers.webp" alt="snickers">
+
+    <!-- Modal -->
+    <div class="modal fade" id="t01" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">SNICKERS</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <img class="img-thumbnail w-25" src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/GZS%20BZS%20OD/img/nasi/edes/Snickers.webp" alt="snickers">
+                        <hr>
+                        <legend>feltétek:</legend>
+                        <input type="checkbox" id="ketchup">
+                        <label for="ketchup">KETCHUP (+40Ft)</label> <br>
+                        <input type="checkbox" id="mustar">
+                        <label for="mustar">MUSTÁR (+20Ft)</label> <br>
+                        <input type="checkbox" id="majonez">
+                        <label for="majonez">MAJONÉZ (+35Ft)</label> <br>
+                        <hr>
+                        <p>A termék ára: <span id="snickers" style="color: red; font-weight: bolder">... Ft</span></p>
+                        <input type="number" name="db" id="snickers_darab" value="1" min="0" max="3" onchange="ar()"> darab
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSE</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="kosarba()">KOSÁRBA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var snickers = 220;
+
+        function ar(){
+            document.getElementById('snickers').innerHTML = snickers * snickers_darab.value + " Ft"
+        }
+
+        function kosarba(){
+            localStorage.setItem("snickers", Number(snickers_darab.value))
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
