@@ -1,3 +1,0 @@
-# IDE A HIDEG KAJÁK KÉPEIT KÉREM! 
-
-pl: szendvicsek, vajaskenyér, ...
