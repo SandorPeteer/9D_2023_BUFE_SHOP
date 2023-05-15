@@ -1,45 +1,379 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Kosár</title>
 
-        <title>Kosár</title>
-        <style>
-            body{
-                background-color: rgb(139, 66, 7);
+
+
+    <style>
+    
+        body{
+            background-image: linear-gradient(to right, #35a6e8 0%, #35a6e8 50%, #2B2F3A 50%, #2B2F3A 100%);
+            color: azure;
+            
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
             }
-        </style>
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
 
 
-    </head>
-    <body>
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
 
+        .mod {
+            transition: all 0.2s ease-out;
+        }
+
+        .mod:hover {
+            background-color: darkblue;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+
+        #kosar {
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid grey;
+            margin-bottom: 5px;
+            margin-top: 8vh;
+            color: #2B2F3A;
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        td {
+            width: 100px;
+            text-align: center;
+            border: 1px solid darkgrey;
+            border-radius: 5px;
+        }
         
+    
 
-        <header>
-            <ul>
-                <a href="index.html"><li>Főoldal</li></a>
-                <a href="etel.html"><li>Étel</li></a>
-                <a href="ital.html"><li>Ital</li></a>
-                <a href="nasik.html"><li>Nasik</li></a>
-                <a href="egyeb.html"><li>Egyéb</li></a>
-                <a href="rolunk.html"><li>Rólunk</li></a>
-                <a href="aszf.html"><li>ÁSZF</li></a>
-                <a href="kosar.html"><li class="active"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/></svg></li></a>
-                <a href="index2.html"><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg></li></a>
-            </ul>
-        </header>
+    </style>
 
-        
+</head>
+<body onload="kosar_frissit()"  >
 
-        
-    </body>
-    </html>
+<header>
+    <ul>
+        <a href="index.html"><li>Főoldal</li></a>
+        <a href="etel.html"><li>Étel</li></a>
+        <a href="ital.html"><li>Ital</li></a>
+        <a href="nasik.html"><li>Nasik</li></a>
+        <a href="egyeb.html"><li>Egyéb</li></a>
+        <a href="rolunk.html"><li>Rólunk</li></a>
+        <a href="aszf.html"><li>ÁSZF</li></a>
+        <a href="kosar.html"><li class="active"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/></svg></li></a>
+        <a href="index2.html"><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg></li></a>
+    </ul>
+</header>
+
+<div class="container">
+    <main>
+        <br>
+        <br>
+        <br>
+        <div class="py-5 text-center">
+            <h2>KOSÁR</h2>
+            <p class="lead">A megrendelt termékek ellenőrzése / kifizetése</p>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+
+                <table id="kosar"></table>
+
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code">
+                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                    </div>
+                </form>
+                <br>
+                <button class="btn btn-primary" onclick="window.open('https://sandorpeteer.github.io/9B_2023_BUFE_SHOP/', '_self')">Vissza</button>
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Számlázási cím</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Keresztnév</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Érvényes keresztnév szükséges.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Családnév</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Érvényes családnév szükséges.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="username" class="form-label">Felhasználónév</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="username" placeholder="Username"
+                                    required>
+                                <div class="invalid-feedback">
+                                    A felhasználónév megadása kötelező.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span
+                                    class="text-body-secondary">(Választható
+                                    )</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                                
+Kérjük, adjon meg egy érvényes e-mail címet a szállítási frissítésekhez.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Cím</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                required>
+                            <div class="invalid-feedback">
+                                Kérjük, adja meg szállítási címét.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address2" class="form-label">Cím 2 <span
+                                    class="text-body-secondary">(Választható)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                        </div>
+
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">Ország</label>
+                            <select class="form-select" id="country" required>
+                                <option value="">Választás...</option>
+                                <option>Magyarország</option>
+                                <option>Szlovákia</option>
+                                <option>Románia</option>
+                                <option>Ukrajna</option>
+                                <option>Németország</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Kérjük, válasszon érvényes országot.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">Megye</label>
+                            <select class="form-select" id="state" required>
+                                <option value="">Választás...</option>
+                                <option>Borsod-Abaúj-Zemplén</option>
+                                <option>Baranya</option>
+                                <option>Csongrád-Csanád</option>
+                                <option>Veszprém</option>
+                                <option>Baranya	</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Adjon meg egy érvényes állapotot.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">Postai irányítószám</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Irányítószám szükséges.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="same-address">
+                        <label class="form-check-label" for="same-address">A szállítási cím megegyezik a számlázási címemmel</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="save-info">
+                        <label class="form-check-label" for="save-info">
+                            Őrizze meg ezt az információt a következő alkalomra</label>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3">Fizetés</h4>
+
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                required>
+                            <label class="form-check-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Debit card</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <label for="cc-name" class="form-label">A kártyán szereplő név</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text-body-secondary">A kártyán látható teljes név</small>
+                            <div class="invalid-feedback">
+                                
+A kártyán szereplő név kötelező
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="cc-number" class="form-label">Bankkártya száma
+                            </label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                               
+A hitelkártya száma kötelező
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Lejárat</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Lejárati idő szükséges
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                                
+Biztonsági kód szükséges
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">FIZETÉS</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+        <p class="mb-1" style=color:white;>&copy; 2017–2023 Kandó Büfé KFT</p>
+        <ul class="list-inline"  style=color:white;>
+        </ul>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+    function kosar_frissit() {
+        let tablazat = "<tr><th style='margin:auto'> Termék: </th><th> darab: </th><th> Ára: </th><th> Töröl </th></tr>"
+        let ossz = 0;
+        let darab = 0;
+        let key = "";
+        for (let i = 0; i <= localStorage.length - 1; i++) {
+            key = localStorage.key(i);
+            darab = parseInt(localStorage.getItem(key));
+            tablazat += "<tr><td>" + key + "</td>" + "<td class='mod' onclick=\"localStorage.setItem('" + key +
+                "',Number(prompt('Mennyi legyen?'))), kosar_frissit()\">" + darab + "</td><td>" + (window[key] * darab) + " Ft" +
+                "</td><td class='xxx' onclick='localStorage.removeItem(\"" + key + "\"), kosar_frissit()'> X </td></tr>";
+            ossz += window[key] * darab;
+        }
+        tablazat += "<tr><th></th> <th>ÖSSZEG: </th> <th>" + ossz + " Ft" + "</th> <th></th></tr>"
+        document.getElementById('kosar').innerHTML = tablazat;
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+
+</body>
+
+    
+</body>
+</html>

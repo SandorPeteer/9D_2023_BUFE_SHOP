@@ -9,10 +9,52 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
       <link rel="stylesheet" href="style.css">
       <style>
-        body{
-            background-color: rgb(15, 96, 189);
+       body{
+            background-color: #35a6e8;
+            color: white;
         }
 
+        .card {
+            box-shadow: 1px 1px 4px skyblue;
+            transition: all 0.2s ease-out;
+            overflow: hidden;
+        }
+
+        .card img {
+            min-height: 30vh;
+            max-height: 30vh;
+            transition: all 0.2s ease-out;
+            object-fit: cover;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 4px red;
+        }
+
+        .card:hover img {
+            scale: 1.05;
+        }
+
+        .card-body {
+            background-color: rgb(255, 252, 250);
+            box-shadow: 0 0 1px black;
+            z-index: 1;
+        }
+
+        .ar {
+            background-color: rgb(255, 255, 255);
+            color: brown;
+        }
+
+        @media (max-width: 768px) {
+            .input-group {
+                margin-top: 0px;
+            }
+
+            .icon {
+                margin-top: -130px;
+            }
+        }
       </style>
     </head>
     <body>
@@ -25,7 +67,7 @@
             <a href="nasik.html"><li>Nasik</li></a>
             <a href="egyeb.html"><li>Egyéb</li></a>
             <a href="rolunk.html"><li>Rólunk</li></a>
-            <a href="rolunk.html"><li>ÁSZF</li></a>
+            <a href="aszf.html"><li>ÁSZF</li></a>
             <a href="kosar.html"><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/></svg></li></a>
             <a href="index2.html"><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -37,75 +79,188 @@
 
 
 
-    <div class="container">
-        
-      <!-- ITT INDULNAK A TERMÉKEK ELSŐ SORA! -->
+      <main class="container py-5">
 
-    
-      <div class="row m-3">
-        <h1>Melegételek</h1>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://github.com/SandorPeteer/9D_2023_BUFE_SHOP/blob/main/img/etel/meleg/burger.jpg?raw=true" class="card-img-top"
-                      alt="">
-                  <div class="card-body">
-                      <h5 class="card-title">HAMBURGER</h5>
-                      <a href="#" class="btn btn-primary">KOSÁRBA</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://github.com/SandorPeteer/9D_2023_BUFE_SHOP/blob/main/img/etel/meleg/burger.jpg?raw=true" class="card-img-top"
-                      alt="Product 2">
-                  <div class="card-body">
-                      <h5 class="card-title">SAJTBURGER</h5>
-                      <a href="#" class="btn btn-primary">KOSÁRBA</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://github.com/SandorPeteer/9D_2023_BUFE_SHOP/blob/main/img/etel/meleg/hotdog.jpg?raw=true" class="card-img-top"
-                      alt="Product 3">
-                  <div class="card-body">
-                      <h5 class="card-title">HOTDOG</h5>
-                      <a href="#" class="btn btn-primary">KOSÁRBA</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-      <!-- ITT INDULNAK A TERMÉKEK MÁSODIK SORA! -->
+        <!-- TERMÉKEK 1. csoport -->
 
-
-      <div class="row m-3">
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://github.com/SandorPeteer/9D_2023_BUFE_SHOP/blob/main/img/etel/meleg/pizza.jpg?raw=true" class="card-img-top"
-                      alt="Product 1">
-                  <div class="card-body">
-                      <h5 class="card-title">PIZZA</h5>
-                      <a href="#" class="btn btn-primary">KOSÁRBA</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://github.com/SandorPeteer/9D_2023_BUFE_SHOP/blob/main/img/etel/meleg/piritos.jpg?raw=true" class="card-img-top"
-                      alt="Product 2">
-                  <div class="card-body">
-                      <h5 class="card-title">FRANCIA PIRÍTÓS</h5>
-                      <a href="#" class="btn btn-primary">KOSÁRBA</a>
-                  </div>
-              </div>
+            <div class="col-md-12 text-center">
+                <h2 class="mb-4">Hamburgerek</h2>
+            </div>
         </div>
-        <h1>Hideg ételek</h2>
-    <div class="b-example-divider"></div>
 
-    <footer>
 
-    </footer>
+         <!-- Termékek sora -->
+
+         <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_slim_vanilla">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/meleg/crop_201603091554_hamburger.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Sima hamburger</h5>
+                        <p class="Hell_slim_vanilla text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_salted_caramel">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/meleg/corleone-ristorante-pizza-kiszallitas-debrecen-pizza-cheese-burger.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Sajtos hamburger</h5>
+                        <p class="Hell_salted_caramel text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_slim_hazelnut">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/meleg/burger.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Dupla sajtos hamburger</h5>
+                        <p class="Hell_slim_hazelnut text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_rum_wallnut">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/meleg/double-cheeseburger-full.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Dupla húsos hamburger</h5>
+                        <p class="Hell_rum_wallnut text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row etel">
+                <div class="col-md-12 text-center">
+                    <h2 id="hotdogok" class="mb-4">HOTDOGOK</h2>
+                </div>
+            </div>
+
+                   <!-- Termékek sora -->
+
+        <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_slim_vanilla">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/meleg/hotdog.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Sima hotdog</h5>
+                        <p class="Hell_slim_vanilla text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_salted_caramel">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/meleg/110776_KRL_K55110V0_OR1_OH_640x428.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Sajtos hotdog</h5>
+                        <p class="Hell_salted_caramel text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_slim_hazelnut">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/meleg/azjPYwq_460s.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Dupla sajtos hotdog</h5>
+                        <p class="Hell_slim_hazelnut text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_rum_wallnut">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/meleg/bacon-grill-hot-dog-recept-okosgrill-850x567.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Duplán átsütött hotdog</h5>
+                        <p class="Hell_rum_wallnut text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <!-- TERMÉKEK 3. csoport -->
+
+        <div class="row etel">
+            <div class="col-md-12 text-center">
+                <h2 id="szendvicsek" class="mb-4">SZENDVICSEK</h2>
+            </div>
+        </div>
+        
+
+                <!-- Termékek sora -->
+
+                <div class="row m-2">
+                    <div class="col-sm-3">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#hell_slim_vanilla">
+                            <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/hideg/Turkey.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body bg-dark">
+                                <h5 class="card-title">Salátás szendvics</h5>
+                                <p class="Hell_slim_vanilla text-bg-danger p-1 mx-2">350ft</p>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="col-sm-3">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#hell_salted_caramel">
+                            <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/hideg/kemences-sult-sonkas-szendvics.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body bg-dark">
+                                <h5 class="card-title">Sajtos szendvics</h5>
+                                <p class="Hell_salted_caramel text-bg-danger p-1 mx-2">250ft</p>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+        
+                    <div class="col-sm-3">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#hell_slim_hazelnut">
+                            <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/meleg/melegszendvics-1.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body bg-dark">
+                                <h5 class="card-title">Melegszendvics</h5>
+                                <p class="Hell_slim_hazelnut text-bg-danger p-1 mx-2">220ft</p>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+        
+                    <div class="col-sm-3">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#hell_rum_wallnut">
+                            <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/etel/meleg/piritos.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body bg-dark">
+                                <h5 class="card-title">Francia pirítós</h5>
+                                <p class="Hell_rum_wallnut text-bg-danger p-1 mx-2">600ft</p>
+                            </div>
+                        </div>
+                    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"

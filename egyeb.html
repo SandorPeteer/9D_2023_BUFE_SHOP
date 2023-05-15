@@ -15,136 +15,8 @@
 
     body{
     background-color: #35a6e8;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    color: white;
     }
-
-    .images{
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    --rotate: 0deg;
-    transform: translate(-50%, 50%) rotate(var(--rotate));
-    width: 1300px;
-    height: 1300px;
-    border-radius: 50%;
-    transition: transform 0.5s ease-in-out;
-    outline: 1px dashed #fff5;
-    outline-offset: -100px;
-    }
-
-.images .item{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    rotate: calc(60deg * var(--i));
-    }
-
-.images .item img{
-    height: 420px;
-    }
-
-    h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
-    font-weight: bolder;
-    }
-
-    table{
-    border: 3px solid black;
-    width: 80%;
-    height: 120%;
-    }
-
-    a{
-    color: rgba(255, 255, 255, 0);
-    }
-
-header{
-    position: absolute;
-    width: 100%;
-    z-index: 100;
-    border-bottom: 1px solid #fff4;
-    }
-
-header ul{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    list-style: none;
-    }
-header li{
-    padding: 30px 40px;
-    color: #fff;
-    }
-
-header li.active, header li:hover{
-    border-bottom: 2px solid #fff;
-    }
-
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-  }
-}
-
-.b-example-divider {
-  width: 100%;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-}
-
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor;
-}
-
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-
-
 
 #kep
 {
@@ -178,84 +50,115 @@ header li.active, header li:hover{
         <br>
         <br>
         <br>
-      <div class="container">
+        <main class="container">
+    
+            <!-- Termékek sora -->
+    
+            <div class="row m-2">
+    
+                <!-- TERMÉK 1 -->
+                <div class="col-sm-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola">
+                        <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/egyeb/23929700_16bb36ca042266ff143847240d033c45_wm.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title ">Zsebkendő</h5>
+                            <p class="Coca_cola text-bg-danger p-1 mx-2">100ft</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- TERMÉK 2 -->
+                <div class="col-sm-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola_light">
+                        <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/egyeb/melegit.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Szendvics melegítés</h5>
+                            <p class="Coca_cola_light text-bg-danger p-1 mx-2">100ft</p>
+                        </div>
+                    </div>
+    
+                     <!-- TERMÉK 3 -->  
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola_zero">
+                        <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/egyeb/300114310-image-1615891604093.avif"
+                            class="card-img-top" alt="...">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Szószok</h5>
+                            <p  class="Coca_cola_zero text-bg-danger p-1 mx-2">200ft</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- TERMÉK 4 -->
+                <div class="col-sm-3">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola_cherry">
+                        <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/egyeb/10405_se2_c82b0_back-full.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Rágó</h5>
+                            <p  class="Coca_cola_cherry text-bg-danger p-1 mx-2">150ft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
 
-        <!-- ITT INDULNAK A TERMÉKEK ELSŐ SORA! -->
-
-        <div class="row m-3">
-            <div class="col-md-4">
-                <div class="card">
-                    <img id="kep" src="https://www.digitalko.hu/kepek/termek/do/mo/202105/16/domo_do9166c_csaladi_melegszendvics_suto_4_fore_1535535871_650x520.jpg" class="card-img-top"
-                        alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Mellegszendvicsé allakítás</h5>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+        
+                <!-- Termékek sora -->
+        
+                <div class="row m-2">
+        
+                    <!-- TERMÉK 1 -->
+                    <div class="col-sm-3">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola">
+                            <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/egyeb/images.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body bg-dark">
+                                <h5 class="card-title ">Nyalóka</h5>
+                                <p class="Coca_cola text-bg-danger p-1 mx-2">50ft</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- TERMÉK 2 -->
+                    <div class="col-sm-3">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola_light">
+                            <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/egyeb/res_ae789fb6c9e613b7f51dfc307039841d.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body bg-dark">
+                                <h5 class="card-title">Chips</h5>
+                                <p class="Coca_cola_light text-bg-danger p-1 mx-2">350ft</p>
+                            </div>
+                        </div>
+        
+                         <!-- TERMÉK 3 -->  
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola_zero">
+                            <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/egyeb/papirpohar-barna-duplafalu-400ml.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body bg-dark">
+                                <h5 class="card-title">Papir pohár</h5>
+                                <p  class="Coca_cola_zero text-bg-danger p-1 mx-2">200ft</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- TERMÉK 4 -->
+                    <div class="col-sm-3">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola_cherry">
+                            <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/egyeb/komposzt%C3%A1lhat%C3%B3-fa-ev%C5%91eszk%C3%B6z-7.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body bg-dark">
+                                <h5 class="card-title">Evőeszköz</h5>
+                                <p  class="Coca_cola_cherry text-bg-danger p-1 mx-2">400ft</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img id="kep" src="https://vendtex.hu/wp-content/uploads/2020/11/szalveta-index.jpg" class="card-img-top"
-                        alt="Product 2">
-                    <div class="card-body">
-                        <h5 class="card-title">szallvéta vásárlása</h5>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img id="kep" src="https://www.aero-shop.hu/img/60344/527212/527212.jpg" class="card-img-top"
-                        alt="Product 3">
-                    <div class="card-body">
-                        <h5 class="card-title">+kanál,kés,villa</h5>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ITT INDULNAK A TERMÉKEK MÁSODIK SORA! -->
-
-
-        <div class="row m-3">
-            <div class="col-md-4">
-                <div class="card">
-                    <img id="kep" src="https://www.dominox.hu/img/mid/95_1600_w_os_samsung_1099_es_mikro.jpg" class="card-img-top"
-                        alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Mellegítés</h5>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img id="kep" src="https://grate.hu/img/prod-imgs//3567a5b7d6bb1a82b4b17fa6df/Ooops-Classic-Sensitive-papir-zsebkendo-3-retegu-90-db-main.webp" class="card-img-top"
-                        alt="Product 2">
-                    <div class="card-body">
-                        <h5 class="card-title">zsebkendő</h5>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img id="kep" src="https://gyroska.hu/wp-content/uploads/2015/05/ketchup-mayo.jpeg" class="card-img-top"
-                        alt="Product 3">
-                    <div class="card-body">
-                        <h5 class="card-title">ketchup,majonéz</h5>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </div>
 

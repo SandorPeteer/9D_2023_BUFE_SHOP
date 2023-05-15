@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="utf-8">
@@ -15,9 +15,69 @@
 <body>
 
     <style>
-        body{
+             body{
             background-color: #35a6e8;
         }
+
+        .card {
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-bottom: 5%;
+        }
+
+        .card img {
+            max-width: 100vh;
+            min-width: 16vh;
+            max-height: 60vh;
+            min-height: 40vh;
+            object-fit: cover;
+            transition: all 0.5s ease-out;
+        }
+
+        .card:hover {
+            box-shadow: #35a6e8 0px 20px 50px -20px, #35a6e8 0px 30px 60px -30px, #35a6e8 0px -2px 6px 0px inset;
+        }
+
+        .card:hover img {
+            scale: 1.04;
+        }
+
+        .card-body {
+            background-color: rgb(255, 252, 250);
+            z-index: 1;
+            color: #ffffff
+        }
+
+
+
+        .felirat1 {
+            text-align: center;
+            color: #000000
+        }
+
+        .felirat2 {
+            text-align: center;
+            color: #000000
+        }
+
+        .felirat3 {
+            text-align: center;
+            color: #000000
+        }
+
+        .felirat4 {
+            text-align: center;
+            color: #000000
+        }
+
+        .card-title {
+            color: #ffffff
+        }
+
+        .card-text {
+            color: #ffffff
+        }
+
     </style>
 
     <header>
@@ -40,116 +100,263 @@
     <br><br><br><br><br><br>
 
 
-    <div class="container">
+    <main class="container">
 
-        <!-- ITT INDULNAK A TERMÉKEK ELSŐ SORA! -->
+        <br>
+        <h1 class="felirat1">Kólák</h1>
+        <br>
 
-        <div class="row m-3">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/img/ital/meleg/alma.png" class="card-img-top"
-                        alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Almás tea</h5>
-                        <p class="card-text">300ft</p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+        <!-- Termékek sora -->
+
+        <div class="row m-2">
+
+            <!-- TERMÉK 1 -->
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/cocacola.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title ">Coca-Cola </h5>
+                        <p class="card-text">500ml</p>
+                        <p class="Coca_cola text-bg-danger p-1 mx-2">400ft</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/img/ital/meleg/espresso.png" class="card-img-top"
-                        alt="Product 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Espresso</h5>
-                        <p class="card-text">200ft</p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/img/ital/meleg/erdei.png" class="card-img-top"
-                        alt="Product 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Epres tea</h5>
-                        <p class="card-text">300ft</p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- ITT INDULNAK A TERMÉKEK MÁSODIK SORA! -->
+            <!-- TERMÉK 2 -->
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola_light">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/cocacolalight.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Coca-Cola Light</h5>
+                        <p class="card-text">500ml</p>
+                        <p class="Coca_cola_light text-bg-danger p-1 mx-2">400ft</p>
+                    </div>
+                </div>
 
-
-        <div class="row m-3">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/img/ital/meleg/szilva.png" class="card-img-top"
-                        alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Szilvás tea</h5>
-                        <p class="card-text">300ft</p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+                 <!-- TERMÉK 3 -->  
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola_zero">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/cocacolazero.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Coca-Cola Zero</h5>
+                        <p class="card-text">500ml</p>
+                        <p  class="Coca_cola_zero text-bg-danger p-1 mx-2">400ft</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/img/ital/meleg/latte.png" class="card-img-top"
-                        alt="Product 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Tejes kávé</h5>
-                        <p class="card-text">200ft</p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/img/ital/meleg/eper.png" class="card-img-top"
-                        alt="Product 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Erdei gyümölcsös tea</h5>
-                        <p class="card-text">300ft</p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+
+            <!-- TERMÉK 4 -->
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#coca_cola_cherry">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/cocacolacherry.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Coca-Cola Cherry</h5>
+                        <p class="card-text">500ml</p>
+                        <p  class="Coca_cola_cherry text-bg-danger p-1 mx-2">400ft</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row m-3">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://sandorpeteer.github.io/9D_2023_BUFE_SHOP/img/ital/meleg/tejes.png" class="card-img-top"
-                        alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Latte</h5>
-                        <p class="card-text">250ft</p>
-                        <a href="#" class="btn btn-primary">Vásárlás most</a>
+
+
+
+        <!-- Termékek sora -->
+
+        <br>
+        <h1 class="felirat3">Energiaitalok</h1>
+        <br>
+
+        <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_classic">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/classichell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell sima</h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_classic text-bg-danger p-1 mx-2">310ft</p>
                     </div>
                 </div>
             </div>
-           
 
-    </div>
 
-    <div class="b-example-divider"></div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_watermelon">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/watermelonhell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Görögdinnye</h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_watermelon text-bg-danger p-1 mx-2">310ft</p>
+                    </div>
+                </div>
+            </div>
 
-    <footer>
 
-    </footer>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_apple">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/applehell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Alma </h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_apple text-bg-danger p-1 mx-2">310ft</p>
+                    </div>
+                </div>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
-        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
-        crossorigin="anonymous"></script>
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_grape">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/grapehell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Szőlő</h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_grape text-bg-danger p-1 mx-2">310ft</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Termékek sora -->
+
+
+
+        <!-- Termékek sora -->
+
+        <br>
+        <h1 class="felirat4">Kávék</h1>
+        <br>
+
+        <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_cappuccino">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/cappuccinohell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Cappuccino</h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_cappuccino text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_dubble_espresso">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/espressohell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Dubble Espresso</h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_dubble_espresso text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_latte">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/lattehell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Latte </h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_latte text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_coconut">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/coconuthell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Coconut</h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_coconut text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Termékek sora -->
+
+        <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_slim_vanilla">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/vanillahell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Slim Vanilla</h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_slim_vanilla text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_salted_caramel">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/caramelhell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Salted Caramel</h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_salted_caramel text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_slim_hazelnut">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/hazelnuthell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Slim Hazelnut</h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_slim_hazelnut text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#hell_rum_wallnut">
+                    <img src="https://raw.githubusercontent.com/SandorPeteer/9D_2023_BUFE_SHOP/main/img/italkep/wallnuthell.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hell Rum-Wallnut</h5>
+                        <p class="card-text">250ml</p>
+                        <p class="Hell_rum_wallnut text-bg-danger p-1 mx-2">350ft</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+                crossorigin="anonymous">
+                </script>
 
 </body>
 
