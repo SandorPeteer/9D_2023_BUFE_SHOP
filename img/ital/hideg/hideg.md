@@ -1,1 +1,0 @@
-# HIDEG ITALOK KÉPEI!
